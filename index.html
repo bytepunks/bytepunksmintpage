@@ -435,7 +435,7 @@
 
     <script>
         // Core Web3 Variable Matrix Setup
-        const CONTRACT_ADDRESS = "0xb6960F1746761A7C647a96078Cff8804616A6510"; 
+        const CONTRACT_ADDRESS = "0xe9Fd71CE31C1f2F3a3B611208b495fB1419364FE"; 
         const ALCHEMY_RPC_URL = "https://eth-mainnet.g.alchemy.com/v2/fYKMDL9NELcMLpplFxENG";
         const GITHUB_IMAGE_BASE = "https://raw.githubusercontent.com/bytepunks/bytepunksimages/main/images/";
 
@@ -480,7 +480,7 @@
         });
 
         function initializeDynamicLinks() {
-            document.getElementById('linkOpensea').href = `https://opensea.io/collection/bytepunks`;
+            document.getElementById('linkOpensea').href = `https://opensea.io/collection/${CONTRACT_ADDRESS}`;
             document.getElementById('linkEtherscan').href = `https://etherscan.io/address/${CONTRACT_ADDRESS}`;
         }
 
